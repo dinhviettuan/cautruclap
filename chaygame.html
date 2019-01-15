@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<div>
+    <img id="slider1"onclick="prev1()" src="i1.jpg"width="800" height="160" style="box-shadow: red 4px 4px 9px;">
+
+</div>
+<br>
+<div>
+    <img id="slider2"onclick="prev2()" src="i2.jpg" width="800" height="160" style="box-shadow: red 4px 4px 9px;">
+
+</div>
+<br>
+<div>
+    <img id="slider3"onclick="prev3()" src="i3.jpg"width="800" height="160" style="box-shadow: red 4px 4px 9px;">
+</div>
+<br>
+<div>
+    <img id="slider4"onclick="prev4()" src="i4.jpg"width="800" height="160" style="box-shadow: red 4px 4px 9px;">
+</div>
+<br>
+<div>
+    <img id="slider5"onclick="prev5()" src="i5.jpg"width="800" height="160" style="box-shadow: red 4px 4px 9px;">
+</div>
+
+<br>
+<script>
+    var images1 = [
+    	"i1.jpg",
+        "a1.jpg",
+        "q1.jpg"];
+    var images2 = [
+    	"i2.jpg",
+        "a2.jpg",
+        "q2.jpg"];
+    var images3 = [
+    	"i3.jpg",
+        "a3.jpg",
+        "q3.jpg"];
+    var images4 = [
+    	"i4.jpg",
+        "a4.jpg",
+        "q4.jpg"];   
+    var images5 = [
+    	"i5.jpg",
+        "a5.jpg",
+        "q5.jpg"]; 
+    var num = 0;
+
+    function prev1() {
+        var slider1 = document.getElementById("slider1");
+        num--;
+        if(num < 0) {
+            num = images1.length-1;
+        }
+        slider1.src = images1[num];
+    }
+    function prev2() {
+        var slider2 = document.getElementById("slider2");
+        num--;
+        if(num < 0) {
+            num = images2.length-1;
+        }
+        slider2.src = images2[num];
+    }
+    function prev3() {
+        var slider3 = document.getElementById("slider3");
+        num--;
+        if(num < 0) {
+            num = images3.length-1;
+        }
+        slider3.src = images3[num];
+    }
+    function prev4() {
+        var slider4 = document.getElementById("slider4");
+        num--;
+        if(num < 0) {
+            num = images4.length-1;
+        }
+        slider4.src = images4[num];
+    }
+    function prev5() {
+        var slider5 = document.getElementById("slider5");
+        num--;
+        if(num < 0) {
+            num = images5.length-1;
+        }
+        slider5.src = images5[num];
+    }
+</script>
+	
+</body>
+</html>
